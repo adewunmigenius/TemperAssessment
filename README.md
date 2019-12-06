@@ -12,6 +12,7 @@ run the following command:
 `php artisan serve`
 
 ## Go to the browser 
-[link to Application!](http://localhost:8000/)
+After completing the above installation process
+`http://localhost:8000/`
 
-![Chart Image](https://github.com/OJO-Ahmed/TemperAssessment/tempr_assessment_result.png.png)
+![Chart Image](https://raw.githubusercontent.com/OJO-Ahmed/TemperAssessment/master/tempr_assessment_result.png)
