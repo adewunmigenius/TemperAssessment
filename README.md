@@ -4,7 +4,8 @@ Temper PHP Backend Assessment
 An application for Temper admin to view infographics of weekly group users onboarding percentage
 
 ## Run Test
-run `./vendor/bin/phpunit`
+to run unit/integration test, run \
+`./vendor/bin/phpunit`
 
 ## To Run Application
 run the following command:  
