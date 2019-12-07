@@ -29,7 +29,7 @@ class UserInsightServicesTest extends TestCase
         $this->assertEquals('#',$firstletter[0]);
     }
 
-    public function testGroupUsersWeekly(){
+    public function testWeeklyUserPercentage(){
         $all_dates = ['2016-03-19', '2016-03-26', '2016-04-02'];
         $weeklyUsers = [
             "2016-03-19" => [
@@ -46,7 +46,7 @@ class UserInsightServicesTest extends TestCase
             ]
         ];
 
-        $actual = $this->userInsightService->groupUsersWeekly($all_dates, $weeklyUsers);
+        $actual = $this->userInsightService->weeklyUserPercentage($all_dates, $weeklyUsers);
         $expected = [
             "2016-03-19" => [
                 [40, 60],

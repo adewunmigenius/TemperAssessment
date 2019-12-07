@@ -48,13 +48,13 @@ class UserInsightService implements UserInsightInterface
             }
         }
 
-        $groupUser = $this->groupUsersWeekly($all_date, $date_week_onboarding);
+        $groupUser = $this->weeklyUserPercentage($all_date, $date_week_onboarding);
         $outputHighChartData = $this->highChartDataFormat($groupUser);
         return $outputHighChartData;
     }
 
-    // converting weekly data to onboarding_perentage[keys] and number of occurence (percentage of total user per week) [values]
-    public function groupUsersWeekly($all_date, $date_week_onboarding){
+    // converting weekly data to [onboarding_perentage, and number of occurence (weekly percentage user)]
+    public function weeklyUserPercentage($all_date, $date_week_onboarding){
         for($i=0; $i < count($all_date); $i++){
             $user = $date_week_onboarding[$all_date[$i]];
             $totalUserPerWeek = count($user);
